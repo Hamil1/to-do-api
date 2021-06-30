@@ -5,4 +5,4 @@ export interface TaskI {
     isComplete: number;
 }
 
-export default interface TasksI extends TaskI, mongoose.Document {}
+export default interface TaskSI extends TaskI, mongoose.Document {}
