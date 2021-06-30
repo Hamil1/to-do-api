@@ -26,7 +26,6 @@ export const connectt = () => {
 };
 
 export const disconnect = () => {
-    console.log(process.env.NODE_ENV);
     if (process.env.NODE_ENV?.toString() == 'test') {
         return mongoose.connection.db.dropDatabase().then(() => {
             return mongoose.disconnect();

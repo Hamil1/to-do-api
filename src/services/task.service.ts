@@ -10,8 +10,6 @@ export default class TaskService extends BaseService<TaskSI> {
     }
 
     update = async (id: string, body: any) => {
-        console.log(`objeto que llega ${JSON.stringify(body)}`);
-
         const resource = await this.model.findByIdAndUpdate(id, body, { new: true });
         resource.save();
         return resource;

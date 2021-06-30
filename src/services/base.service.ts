@@ -13,12 +13,15 @@ export default class BaseService<T> {
     };
 
     get = async (filters = {}): Promise<T[]> => {
-        const resource = (await this.model.find(filters)) as T[];
+        const resource = (await this.model.find(filters).select('-password').exec()) as T[];
         return resource;
     };
 
     getById = async (id: string): Promise<T> => {
-        const resource = (await this.model.findOne({ _id: mongoose.Types.ObjectId(id) })) as T;
+        const resource = (await this.model
+            .findOne({ _id: mongoose.Types.ObjectId(id) })
+            .select('-password')
+            .exec()) as T;
         return resource;
     };
 

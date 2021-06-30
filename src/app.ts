@@ -4,9 +4,6 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import logging from './config/logging';
 import router from './routes/router';
-import passport from 'passport';
-import { Request, Response, NextFunction } from 'express';
-const LocalStrategy = require('passport-local').Strategy;
 
 let app = express();
 const NAMESPACE = 'App';
@@ -41,41 +38,6 @@ app.use((req, res, next) => {
     next();
 });
 
-// //passport config
-// app.use(passport.initialize());
-// let Account = require('./model/account');
-// passport.use(
-//     new LocalStrategy(
-//         {
-//             usernameField: 'email',
-//             passwordField: 'password'
-//         },
-//         Account.authenticate()
-//     )
-// );
-
-// passport.serializeUser(Account.serializeUser());
-// passport.deserializeUser(Account.deserializeUser());
-
 app.use(router);
-
-// validating 401 middleware
-app.use(function (err: any, req: Request, res: Response, next: NextFunction) {
-    if (err.name === 'UnauthorizedError') {
-        res.status(401).json({ code: 401, message: 'invalid token...' });
-    }
-    next();
-});
-
-/** Error handling */
-app.use((req, res, next) => {
-    const error = new Error('Not found');
-
-    res.status(404).json({
-        message: error.message
-    });
-});
-
-const httpServer = http.createServer(app);
 
 export default http.createServer(app);

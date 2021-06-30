@@ -1,7 +1,7 @@
 import mongoose from '../database';
 
 export interface AccountI {
-    email: string;
+    username: string;
     password: string;
 }
 
