@@ -1,8 +1,9 @@
+import 'reflect-metadata';
 import http, { createServer } from 'http';
 import express from 'express';
 import bodyParser from 'body-parser';
 import logging from './config/logging';
-import v1 from './routes/v1/index';
+import router from './routes/router';
 import passport from 'passport';
 import { Request, Response, NextFunction } from 'express';
 const LocalStrategy = require('passport-local').Strategy;
@@ -56,8 +57,7 @@ app.use((req, res, next) => {
 // passport.serializeUser(Account.serializeUser());
 // passport.deserializeUser(Account.deserializeUser());
 
-// V1 API routes
-app.use('/v1', v1);
+app.use(router);
 
 // validating 401 middleware
 app.use(function (err: any, req: Request, res: Response, next: NextFunction) {

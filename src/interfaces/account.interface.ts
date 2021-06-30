@@ -5,4 +5,4 @@ export interface AccountI {
     password: string;
 }
 
-export default interface AccountsI extends AccountI, mongoose.Document {}
+export default interface AccountSI extends AccountI, mongoose.Document {}

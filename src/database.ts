@@ -18,7 +18,6 @@ export const connectt = () => {
                 if (err) {
                     reject(err);
                 } else {
-                    console.log('Successfully Connected!');
                     fulfill('Successfully Connected!');
                 }
             }
