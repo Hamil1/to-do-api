@@ -4,8 +4,10 @@
   "description": "This API is a test",
   "main": "src/index.ts",
   "scripts": {
+    "start": "node build/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf build && prettier --write src/ && tsc"
+    "build": "rm -rf build && prettier --write src/ && tsc",
+    "dev": "npx nodemon src/server.ts"
   },
   "repository": {
     "type": "git",
