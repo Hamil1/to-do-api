@@ -58,7 +58,7 @@ Request body:
     
     {
     	"username": "victor.diaz",
-    	"password": "puzzle",
+    	"password": "puzzle"
     }
 
 Response body:
@@ -81,7 +81,7 @@ Request body:
     
     {
     	"username": "victor.diaz",
-    	"password": "puzzle",
+    	"password": "puzzle"
     }
 
 Response body:
@@ -101,6 +101,10 @@ Response body:
 
 ### GET /v1/account
 
+Headers:
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlODQ0NzBjZWRjZTRlMTViY2JiNmQ2NyIsImlhdCI6MTU4NzQxMTQwMCwiZXhwIjoxNTkwMDAzNDAwfQ.E00JB6BzTdhmfA4czdlBdFjBA63B-OBlXSbZQlP9qwU
+    
 Request body:
     
     {}
@@ -147,6 +151,10 @@ Response body:
 
 ### GET /v1/account/id
 
+Headers:
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlODQ0NzBjZWRjZTRlMTViY2JiNmQ2NyIsImlhdCI6MTU4NzQxMTQwMCwiZXhwIjoxNTkwMDAzNDAwfQ.E00JB6BzTdhmfA4czdlBdFjBA63B-OBlXSbZQlP9qwU
+    
 Request body:
     
     {}
@@ -163,6 +171,10 @@ Response body:
 
 ### DELETE /v1/account/id
 
+Headers:
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlODQ0NzBjZWRjZTRlMTViY2JiNmQ2NyIsImlhdCI6MTU4NzQxMTQwMCwiZXhwIjoxNTkwMDAzNDAwfQ.E00JB6BzTdhmfA4czdlBdFjBA63B-OBlXSbZQlP9qwU
+    
 Request body:
     
     {}
@@ -177,6 +189,10 @@ Response body:
   
   ### GET /v1/task
 
+Headers:
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlODQ0NzBjZWRjZTRlMTViY2JiNmQ2NyIsImlhdCI6MTU4NzQxMTQwMCwiZXhwIjoxNTkwMDAzNDAwfQ.E00JB6BzTdhmfA4czdlBdFjBA63B-OBlXSbZQlP9qwU
+    
 Request body:
     
     {}
@@ -202,6 +218,10 @@ Response body:
 
 >**This one returns all the tasks that are not complete**
 
+Headers:
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlODQ0NzBjZWRjZTRlMTViY2JiNmQ2NyIsImlhdCI6MTU4NzQxMTQwMCwiZXhwIjoxNTkwMDAzNDAwfQ.E00JB6BzTdhmfA4czdlBdFjBA63B-OBlXSbZQlP9qwU
+    
 Request body:
     
     {}
@@ -227,6 +247,10 @@ Response body:
 
 >**This one returns all the tasks that are not complete**
 
+Headers:
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlODQ0NzBjZWRjZTRlMTViY2JiNmQ2NyIsImlhdCI6MTU4NzQxMTQwMCwiZXhwIjoxNTkwMDAzNDAwfQ.E00JB6BzTdhmfA4czdlBdFjBA63B-OBlXSbZQlP9qwU
+    
 Request body:
     
     {}
@@ -250,6 +274,10 @@ Response body:
     
 ### GET /v1/task/id
 
+Headers:
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlODQ0NzBjZWRjZTRlMTViY2JiNmQ2NyIsImlhdCI6MTU4NzQxMTQwMCwiZXhwIjoxNTkwMDAzNDAwfQ.E00JB6BzTdhmfA4czdlBdFjBA63B-OBlXSbZQlP9qwU
+    
 Request body:
     
     {}
@@ -265,6 +293,10 @@ Response body:
     
 ### DELETE /v1/task/id
 
+Headers:
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlODQ0NzBjZWRjZTRlMTViY2JiNmQ2NyIsImlhdCI6MTU4NzQxMTQwMCwiZXhwIjoxNTkwMDAzNDAwfQ.E00JB6BzTdhmfA4czdlBdFjBA63B-OBlXSbZQlP9qwU
+    
 Request body:
     
     {}
@@ -279,6 +311,10 @@ Response body:
 
   ### POST /v1/task
 
+Headers:
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlODQ0NzBjZWRjZTRlMTViY2JiNmQ2NyIsImlhdCI6MTU4NzQxMTQwMCwiZXhwIjoxNTkwMDAzNDAwfQ.E00JB6BzTdhmfA4czdlBdFjBA63B-OBlXSbZQlP9qwU
+    
 Request body:
     
     {
@@ -297,6 +333,10 @@ Response body:
     
   ### PUT /v1/task/id
 
+Headers:
+    
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlODQ0NzBjZWRjZTRlMTViY2JiNmQ2NyIsImlhdCI6MTU4NzQxMTQwMCwiZXhwIjoxNTkwMDAzNDAwfQ.E00JB6BzTdhmfA4czdlBdFjBA63B-OBlXSbZQlP9qwU
+    
 Request body:
     
     {
