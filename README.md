@@ -37,7 +37,6 @@ npm run start
 - [GET /v1/account](#get-v1account)
 - [GET /v1/account/:id](#get-v1accountid)
 - [DELETE /v1/account/:id](#delete-v1accountid)
-- [POST /v1/account](#post-v1account)
 
 ## Task
   V1
@@ -216,7 +215,7 @@ Response body:
     
 ### GET /v1/task/completed
 
->**This one returns all the tasks that are not complete**
+>**This one returns all the tasks that are completed**
 
 Headers:
     
@@ -245,7 +244,7 @@ Response body:
     
 ### GET /v1/task/incomplete
 
->**This one returns all the tasks that are not complete**
+>**This one returns all the tasks that are incomplete**
 
 Headers:
     
@@ -332,6 +331,8 @@ Response body:
     }
     
   ### PUT /v1/task/id
+
+>**In this endpoint you can update a task (if you want to edit just the status of it, you can send just this { isComplete: 0 })**
 
 Headers:
     
